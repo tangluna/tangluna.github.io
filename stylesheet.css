@@ -1,0 +1,7 @@
+.white-text {
+  color: white !important;
+}
+
+.hover-bold:hover {
+  font-weight: bold;
+}

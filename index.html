@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Tarang Lunawat</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<html lang="en" dir="ltr">
+  <head>
+    <title>Tarang Lunawat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<!-- Commented out because navbar looks better in other font and this overrides it
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
 </style>
-<body>
+-->
+
+<body style="background-color:#fff">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px; background-color:#2C3E50 !important;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft white-text hover-bold" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container white-text">
     <h3 class="w3-padding-64"><b>Tarang<br>Lunawat</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#aboutMe" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
-    <a href="#whatDoIDo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What Do I Do?</a> 
-    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a> 
-    <a href="#achievements" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Achievements</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item nav-link w3-hover-white white-text hover-bold">Home</a>
+    <a href="#aboutMe" onclick="w3_close()" class="w3-bar-item nav-link w3-hover-white white-text hover-bold">About Me</a>
+    <a href="#whatDoIDo" onclick="w3_close()" class="w3-bar-item nav-link w3-hover-white white-text hover-bold">What Do I Do?</a>
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item nav-link w3-hover-white white-text hover-bold">Skills</a>
+    <a href="#achievements" onclick="w3_close()" class="w3-bar-item nav-link w3-hover-white white-text hover-bold">Achievements</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item nav-link w3-hover-white white-text hover-bold">Contact Me!</a>
   </div>
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-blue w3-opacity-min w3-top w3-hide-large w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Tarang Lunawat</span>
+<!-- Contents of navbar on top for smaller screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#2C3E50 !important;">
+  <a href="javascript:void(0)" class="w3-margin-right white-text hover-bold" style="background-color:#2C3E50 !important;" onclick="w3_open()">☰</a>
+  <span class="white-text">Tarang Lunawat</span>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-main" style="margin-left:340px;margin-right:40px; margin-top: 3.75em;">
 
   <!-- Header -->
+  <!-- is there a way to add top and left padding only when nav is small (add it to the funct) -->
   <div class="w3-container" style="margin-top:80px; height:(screen.height - 140); background-color:rgb(195, 239, 247)" id="showcase">
     <h1 class="w3-jumbo"><b>Hi! I'm Tarang Lunawat</b></h1>
     <h1 class="w3-xxxlarge w3-text-blue"><b>Welcome to my website.</b></h1>
@@ -55,7 +66,7 @@ body {font-size:16px;}
     <p>This is currently under construction!</p>
     <p> Thanks for stopping by :) </p>
   </div>
-  
+
   <!-- What Do I Do? -->
   <div class="w3-container" id="whatDoIDo" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>What Do I Do?</b></h1>
@@ -117,7 +128,7 @@ body {font-size:16px;}
         </li>
       </ul>
     </div>
-        
+
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-padding-16">Floorplanning</li>
@@ -133,7 +144,7 @@ body {font-size:16px;}
           <button class="w3-button w3-blue w3-padding-large w3-hover-black">Sign Up</button>
         </li>
       </ul>
-    </div> 
+    </div>
   </div> -->
 
 <!-- Achievements -->
@@ -142,7 +153,7 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid blue" class="w3-round">
     <p>WHEEEEEE</p>
 </div>
-  
+
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Contact</b></h1>
@@ -162,7 +173,7 @@ body {font-size:16px;}
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
       <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
-    </form>  
+    </form>
   </div>
 
 <!-- End page content -->
@@ -177,7 +188,7 @@ function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
 }
- 
+
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
